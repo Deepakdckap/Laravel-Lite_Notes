@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* We can add our regular CSS in this file */
+@layer components {
+    .btn-link {
+        @apply inline-block px-4 py-2 bg-indigo-700 rounded-md font-bold text-sm text-white uppercase tracking-widest hover:bg-indigo-800 active:bg-indigo-900 focus:ring ring-indigo-300;
+    }
+    .btn-lg {
+        @apply px-6 py-3;
+    }
+
+    /* Delete button */
+    .btn {
+        @apply px-4 py-2 rounded-md font-bold text-sm text-white uppercase tracking-widest focus:ring focus:outline-none;
+    }
+    .btn-danger {
+        @apply bg-red-600 hover:bg-red-700 active:bg-red-700 ring-red-300;
+    }
+}
+
+.but{
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: blue;
+    color: white;
+}
